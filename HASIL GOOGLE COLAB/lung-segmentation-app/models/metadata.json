@@ -1,0 +1,14 @@
+{
+    "model_name": "YOLOv8n-seg Lung Segmentation",
+    "version": "1.0",
+    "classes": [
+        "body",
+        "cord",
+        "paru kanan",
+        "paru kiri"
+    ],
+    "input_size": 640,
+    "mAP50": 0.9382642666234318,
+    "mAP50-95": 0.8237430794358691,
+    "trained_date": "2025-12-08"
+}

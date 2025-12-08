@@ -1,0 +1,12 @@
+path: /content/segmentasi
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: body
+  1: cord
+  2: paru kanan
+  3: paru kiri
+
+nc: 4

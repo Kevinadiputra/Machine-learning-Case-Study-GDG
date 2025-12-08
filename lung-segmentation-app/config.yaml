@@ -1,0 +1,58 @@
+# Lung Segmentation Application Configuration
+
+# Model Configuration
+model:
+  name: "YOLOv8n-seg"
+  version: "1.0"
+  path: "models/best.pt"
+  input_size: 640
+  confidence_threshold: 0.25
+  iou_threshold: 0.7
+
+# Class Configuration
+classes:
+  - id: 0
+    name: "body"
+    color: [255, 0, 0]  # Red
+  - id: 1
+    name: "cord"
+    color: [0, 255, 0]  # Green
+  - id: 2
+    name: "paru kanan"
+    color: [0, 0, 255]  # Blue
+  - id: 3
+    name: "paru kiri"
+    color: [255, 255, 0]  # Yellow
+
+# Application Settings
+app:
+  title: "Lung Segmentation Application"
+  icon: "🫁"
+  layout: "wide"
+  max_upload_size: 10  # MB
+
+# Inference Settings
+inference:
+  device: "auto"  # auto, cpu, cuda, mps
+  batch_size: 1
+  save_results: true
+  output_dir: "outputs"
+
+# Visualization Settings
+visualization:
+  show_labels: true
+  show_confidence: true
+  mask_alpha: 0.3
+  line_width: 2
+  font_scale: 0.6
+
+# Performance Settings
+performance:
+  enable_caching: true
+  cache_ttl: 3600  # seconds
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "app.log"

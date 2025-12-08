@@ -1,0 +1,43 @@
+
+GDGoC UNSRI 2025/2026 - CORE TEAM RECRUITMENT 📃
+kevinadiputra66@gmail.com Switch account
+ 
+Draft saved
+The name, email, and photo associated with your Google account will be recorded when you upload files and submit this form
+* Indicates required question
+1st Choice Curriculum Division
+Choose one divison!
+What's your preferred curriculum division?
+*
+Front-End Development
+Back-End Development
+UI/UX
+Machine Learning
+Cyber Security
+Game Development
+Mobile Development
+Your reasons to choose that division
+*
+karena saya memiliki minat dan kemampuan ke bidang machine learning, saya memahami konsep dasar serta mendalamnya jadi mendukung pilihan saya ke divisi machine learning, saya juga senang sekali mengajarkan dan juga belajar dari oorang lain 
+Your experience in that division
+*
+Share your skills, projects, positions, or any other relevant experiences related to the division you selected.
+untuk pengalaman mengajar saya ada pada saat menjadi mentor pada divisi newscasting di BO INTEL fasilkom, saya mengajari staff newscasting saya mengenai newscasting setiap sabtunya, sebanyak 12 pertemuan. metodenya adalah presentasi pemaparan melalui discord dan juga adanya practice session. untuk pengalaman pada divisi machine learning saya memiliki pengalaman pada kasus klasifikasi, clustering, regresi, forecasting, klasifikasi gambar, dan analisis sentimen. saya juga saat ini sedang membantu project riset dosen saya yaitu AQMS BRIN, dimana saya diamanahkan untuk membuat model forecasting menggunakan LSTM pada resource jetson nano. project riset lainnya saya ikuti adalah CTI Distributed System di comnets dimana saya diarahkan untuk membangun model yang dapat mengenali pola serangan dan dapat di kenali oleh C Guardian. banyak juga tugas kuliah yang mendorong pengalaman saya seperti project akhir data mining saya membandingkan kinerja 6 model pada 3 skenario berbeda (tidak di sampling, under sampling, dan over sampling)
+
+diatas adalah pengalaman di kuliah, di luar saya juga memiliki project. kebanyakan project luar ini adalah project dari beasiswa yang saya ikuti seperti ID CAMP, dbs, dan Microsoft elevaite training center. terdapat berbagai project dari kelas kelas yang beasiswa tersebut tawarkan seperti analisis customers, analisis sentimen, klasifikasi gambar batu gunting kertas, klasifikasi gambar CIFAR 10 dan project lainnya. 
+What tools, products, software, or frameworks have you previously utilized in the division you selected? Please describe your experience using them.
+
+*
+tools yang sering saya pakai adalah VScode dan google colab, vscode saya gunakan apabila memerlukan library tertentu dan juga tidak memerlukan komputassi yang berlebihan. saya menggunakan anaconda untuk environment managementnya. 
+
+lalu untuk google colab saya gunakan untk project yang memerlukan komputasi yang lebih kuat seperti klasifikasi gambar batu gunting kertas, klasifikasi CIFAR 10
+Upload your portfolio here!
+*
+Upload 1 supported file: PDF or document. Max 100 MB.
+PDF
+Kevin Adiputra Mahesa (portofolio).pdf
+Never submit passwords through Google Forms.
+This content is neither created nor endorsed by Google. - Contact form owner - Terms of Service - Privacy Policy
+Does this form look suspicious? Report
+
+Google Forms
