@@ -1,4 +1,4 @@
-# Submition Core GDG - Lung Segmentation App
+# Submition Core GDG - Lung Segmentation App (Tolong baca plis)
 
 **Nama: Kevin Adiputra**
 
