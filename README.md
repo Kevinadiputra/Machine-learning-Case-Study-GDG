@@ -1,138 +1,79 @@
-# Lung Segmentation Application
+# Lung Segmentation App
 
-Medical image segmentation application using YOLOv8-seg for automated lung and body structure detection from chest X-ray images.
+**Nama: Kevin Adiputra**
 
-## 🎯 Features
+Proyek ini merupakan implementasi Computer Vision untuk segmentasi medis otomatis pada citra X-Ray dada. Menggunakan algoritma YOLOv8-seg, aplikasi ini dirancang untuk mengenali dan memisahkan area paru-paru (kiri dan kanan), tulang belakang (spinal cord), dan tubuh dengan presisi tinggi.
 
-- **Real-time Segmentation**: Fast and accurate segmentation using YOLOv8n-seg
-- **Multi-class Detection**: Segments 4 classes:
-  - Body
-  - Cord (Spinal Cord)
-  - Right Lung (Paru Kanan)
-  - Left Lung (Paru Kiri)
-- **Interactive Web Interface**: User-friendly Streamlit application
-- **Metrics Dashboard**: Comprehensive detection metrics and statistics
-- **Export Functionality**: Download results and metrics
+Proyek ini dikembangkan sebagai bagian dari studi kasus Machine Learning untuk Google Developer Groups (GDG).
 
-## 🚀 Quick Start
+## Demo Aplikasi
 
-### Prerequisites
+Aplikasi ini telah di-deploy dan dapat digunakan secara langsung melalui tautan berikut:
 
-- Python 3.8 or higher
-- pip package manager
-- (Optional) CUDA-capable GPU for faster inference
-
-### Installation
-
-1. **Clone or download this repository**
-
-2. **Install dependencies**:
-```bash
-pip install -r requirements.txt
-```
-
-3. **Place your trained model**:
-   - Put your `best.pt` model file in the `models/` directory
-   - Or train a new model using the provided notebook
-
-### Running the Application
-
-```bash
-streamlit run src/app.py
-```
-
-The application will open in your default web browser at `http://localhost:8501`
-
-## 📁 Project Structure
-
-```
-lung-segmentation-app/
-├── src/
-│   ├── app.py              # Main Streamlit application
-│   ├── inference.py        # Model inference logic
-│   └── utils.py            # Utility functions
-├── models/
-│   ├── best.pt             # Trained model weights
-│   └── metadata.json       # Model metadata
-├── assets/
-│   └── sample_images/      # Sample images for testing
-├── config.yaml             # Configuration file
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
-
-## 🎮 Usage
-
-1. **Upload Image**: Click "Choose an X-ray image..." and select a chest X-ray image
-2. **Configure Parameters**: Adjust confidence and IoU thresholds in the sidebar
-3. **View Results**: See segmentation results in multiple tabs:
-   - **Visualization**: Segmented image with masks and labels
-   - **Metrics**: Detection statistics and per-class information
-   - **Export**: Download results and metrics
-
-## ⚙️ Configuration
-
-Edit `config.yaml` to customize:
-- Model parameters (confidence, IoU thresholds)
-- Visualization settings (colors, labels)
-- Performance options (caching, device)
-
-## 🔧 Model Training
-
-To train your own model, use the provided Jupyter notebook:
-
-```bash
-jupyter notebook main.ipynb
-```
-
-Follow the notebook sections:
-1. Data preparation
-2. COCO to YOLO format conversion
-3. Model training
-4. Evaluation
-5. Export for deployment
-
-## 📊 Model Performance
-
-- **Model**: YOLOv8n-seg (nano)
-- **mAP@0.5**: ~75%
-- **Input Size**: 640x640
-- **Inference Speed**: ~30 FPS (GPU) / ~5 FPS (CPU)
-- **Model Size**: ~6 MB
-
-## 🛠️ Troubleshooting
-
-### Model not found error
-- Ensure `best.pt` is in the `models/` directory
-- Check file path in `config.yaml`
-
-### CUDA out of memory
-- Reduce batch size in config
-- Use CPU instead: set `device: "cpu"` in config
-
-### Slow inference
-- Use GPU if available
-- Reduce image resolution
-- Use lighter model (YOLOv8n-seg is already the lightest)
-
-## 📝 Notes
-
-- This application is for research and educational purposes only
-- Not intended for clinical diagnosis
-- Results should be verified by medical professionals
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 📧 Contact
-
-For questions or issues, please open an issue on the repository.
+**https://machine-learning-case-study-gdg-hapkfgwvzrsh5sx2pmqnip.streamlit.app/**
 
 ---
 
-**Developed with ❤️ using YOLOv8-seg and Streamlit**
+## Fitur Utama
+
+* **Segmentasi Real-time**: Menggunakan model YOLOv8n-seg (Nano) yang efisien untuk inferensi cepat.
+* **Deteksi Multi-Kelas**: Mampu melakukan segmentasi pada 4 kelas objek:
+    * Body (Tubuh)
+    * Cord (Tulang Belakang)
+    * Right Lung (Paru Kanan)
+    * Left Lung (Paru Kiri)
+* **Antarmuka Web**: Dibangun menggunakan Streamlit untuk memudahkan pengunggahan gambar dan visualisasi hasil segmentasi.
+* **Metrik Evaluasi**: Menyediakan informasi statistik mengenai akurasi deteksi pada setiap gambar.
+
+## Performa Model
+
+Berdasarkan hasil evaluasi pada dataset validasi, model ini menunjukkan kinerja sebagai berikut:
+
+* **Arsitektur Model**: YOLOv8n-seg
+* **mAP@50 (Mask)**: 93.9%
+* **mAP@50-95 (Mask)**: 82.7%
+* **Kecepatan Inferensi**: ~3.8ms per gambar (GPU T4)
+
+**Rincian Performa per Kelas:**
+
+| Kelas | Precision | Recall | mAP50 |
+|-------|-----------|--------|-------|
+| All | 0.92 | 0.89 | 0.94 |
+| Body | 0.97 | 1.00 | 0.99 |
+| Paru Kanan | 0.95 | 0.90 | 0.92 |
+| Paru Kiri | 0.83 | 0.90 | 0.93 |
+
+## Instalasi dan Penggunaan Lokal
+
+Ikuti langkah berikut untuk menjalankan aplikasi di komputer lokal:
+
+1.  **Clone Repository**
+    ```bash
+    git clone [https://github.com/Kevinadiputra/Machine-learning-Case-Study-GDG.git](https://github.com/Kevinadiputra/Machine-learning-Case-Study-GDG.git)
+    cd Machine-learning-Case-Study-GDG/lung-segmentation-app
+    ```
+
+2.  **Instalasi Dependensi**
+    Disarankan menggunakan Python 3.9 atau versi yang lebih baru.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Menjalankan Aplikasi**
+    ```bash
+    streamlit run src/app.py
+    ```
+    Aplikasi akan berjalan di `http://localhost:8501`.
+
+## Struktur Direktori
+
+* `src/`: Berisi kode sumber utama aplikasi (app.py) dan logika inferensi.
+* `models/`: Direktori penyimpanan bobot model (best.pt).
+* `assets/`: Direktori untuk gambar sampel atau aset statis lainnya.
+* `requirements.txt`: Daftar pustaka Python yang diperlukan.
+
+## Penafian (Disclaimer)
+
+Aplikasi ini dikembangkan semata-mata untuk tujuan penelitian dan edukasi dalam bidang Machine Learning. Hasil prediksi model ini tidak ditujukan sebagai pengganti diagnosis medis profesional. Penggunaan untuk keputusan klinis harus melalui verifikasi tenaga medis ahli.
+
+---
