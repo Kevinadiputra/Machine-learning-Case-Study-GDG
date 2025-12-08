@@ -1,0 +1,24 @@
+
+train/
+test/
+valid/
+
+*.zip
+*.rar
+drive-download-*.zip
+
+bukti share.png
+follow gdg.png
+
+__pycache__/
+*.ipynb_checkpoints
+.DS_Store
+
+*.docx
+.pdf
+
+README.dataset.txt
+README.roboflow.txt
+submition.txt
+jawaban form.txt
+Machine Learning Assignment.txt
