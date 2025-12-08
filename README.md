@@ -72,8 +72,4 @@ Ikuti langkah berikut untuk menjalankan aplikasi di komputer lokal:
 * `assets/`: Direktori untuk gambar sampel atau aset statis lainnya.
 * `requirements.txt`: Daftar pustaka Python yang diperlukan.
 
-## Penafian (Disclaimer)
-
-Aplikasi ini dikembangkan semata-mata untuk tujuan penelitian dan edukasi dalam bidang Machine Learning. Hasil prediksi model ini tidak ditujukan sebagai pengganti diagnosis medis profesional. Penggunaan untuk keputusan klinis harus melalui verifikasi tenaga medis ahli.
-
 ---
