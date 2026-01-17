@@ -37,7 +37,6 @@ scipy>=1.11.0
 # Annotation Tools
 pycocotools>=2.0.6
 
-# Optional but recommended
-# GPU acceleration (if CUDA available)
-# nvidia-cuda-runtime-cu11>=11.8
-# nvidia-cudnn-cu11>=8.6
+GPU acceleration (if CUDA available)
+nvidia-cuda-runtime-cu11>=11.8
+nvidia-cudnn-cu11>=8.6
